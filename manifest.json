@@ -1,0 +1,17 @@
+{
+  "name": "Remove Twitter Promotions",
+  "version": "0.0.2",
+  "description": "Remove Twitter promoted Trends, Accounts, & Tweets from their web app.",
+  "icons": {
+  "48": "icons/icon-48.png",
+  "128": "icons/icon-128.png"
+  },
+    "content_scripts": [
+    {
+      "matches": ["http://twitter.com/*", "https://twitter.com/*"],
+      "css": ["remove.css"],
+      "js": ["remove.js"]
+    }
+  ],
+  "content_security_policy": "script-src 'self'"
+}
