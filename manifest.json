@@ -1,17 +1,17 @@
 {
   "name": "Remove Promotions for Twitter",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "manifest_version": 2,
   "description": "Remove promoted Trends, Accounts, & Tweets from the Twitter website.",
   "icons": {
-  "48": "icons/icon-48.png",
-  "128": "icons/icon-128.png"
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
   },
-    "content_scripts": [
+  "content_scripts": [
     {
-      "matches": ["http://twitter.com/*", "https://twitter.com/*", "http://mobile.twitter.com/*", "https://mobile.twitter.com/*"],
-      "css": ["remove.css"],
-      "js": ["remove.js"]
+      "matches": [ "http://twitter.com/*", "https://twitter.com/*", "http://mobile.twitter.com/*", "https://mobile.twitter.com/*" ],
+      "css": [ "remove.css" ],
+      "js": [ "remove.js" ]
     }
   ]
 }
